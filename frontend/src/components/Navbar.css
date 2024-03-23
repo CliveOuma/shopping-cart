@@ -1,0 +1,137 @@
+.navbar {
+  background-color: whitesmoke;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+  position: relative;
+}
+
+.nav-logo h2 {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 26px;
+  height: 3rem;
+  width: 22rem;
+
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  height: 3rem;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: orange;
+}
+
+.nav-item .active {
+  color: orange;
+}
+
+.nav-icon {
+  display: none;
+  color: black;
+}
+
+.nav-icon .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 860px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid white;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-logo h2 {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    width: 7rem;
+    height: 2rem;
+
+  }
+
+  .nav-menu.active {
+    background: whitesmoke;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: orange;
+    border: none;
+  }
+
+  .nav-links {
+    padding: 0.7rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: black;
+  }
+}

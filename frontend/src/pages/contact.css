@@ -1,0 +1,71 @@
+.form {
+    width: 35rem;
+    padding: 3rem;
+
+}
+
+.auth {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 400px;
+    border: solid lightgray 0.1px;
+    margin-top: 98px;
+    padding: 5px;
+}
+
+.form input,
+textarea {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem auto;
+    padding: 20px;
+    width: 100%;
+    border: 0.1px solid #777;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form {
+    width: 30rem;
+    padding: 2rem;
+
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btn button {
+    background-color: brown;
+    font-size: 15px;
+    color: white;
+    width: 200px;
+    outline: none;
+}
+
+.btn button:hover {
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .auth {
+        max-width: 300px;
+    }
+
+    .form input,
+    textarea {
+        padding: 1px;
+    }
+}

@@ -1,0 +1,79 @@
+.form {
+    width: 35rem;
+    padding: 1.5rem;
+
+}
+
+.auth {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 98px;
+    padding: 8px;
+}
+
+.form h2 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form input {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.3rem;
+    margin: 0.5rem auto;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+}
+
+.active {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: center;
+
+}
+
+.Reset {
+    color: rebeccapurple;
+}
+
+.Btn {
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Links {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .auth {
+        max-width: 300px;
+    }
+
+    .form input {
+        padding: 0.2rem;
+    }
+}
