@@ -13,13 +13,13 @@ A simple shopping cart application built with React.js.
 
 ## Demo
 
-[Link to live demo](#) - (Add the URL once your project is deployed)
+[Link to live demo](https://its-shopping-cart.vercel.app/) 
 
 ## Installation
 
 1. Clone the repository:
 
-git clone https://github.com/cliveouma/react-shopping-cart.git
+git clone https://github.com/cliveouma/shopping-cart.git
 
 2. Navigate to the project directory:
 
